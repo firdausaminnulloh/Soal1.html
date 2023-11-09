@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List Items</title>
+    <style>
+        /* Styling for the list items */
+        ol {
+            list-style-type: none;
+            counter-reset: list-counter;
+        }
+        ol li::before {
+            counter-increment: list-counter;
+            content: counter(list-counter, lower-roman) ". ";
+            font-weight: bold;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>BUS</li>
+        <li>Mobil</li>
+        <li>Motor</li>
+    </ol>
+
+    <ol type="A">
+        <li>BUS</li>
+        <li>Mobil</li>
+        <li>Motor</li>
+    </ol>
+
+    <ol type="a">
+        <li>BUS</li>
+        <li>Mobil</li>
+        <li>Motor</li>
+    </ol>
+
+    <ol type="I">
+        <li>BUS</li>
+        <li>Mobil</li>
+        <li>Motor</li>
+    </ol>
+
+    <ol type="i">
+        <li>BUS</li>
+        <li>Mobil</li>
+        <li>Motor</li>
+    </ol>
+</body>
+</html>
